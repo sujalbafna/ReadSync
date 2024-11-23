@@ -13,3 +13,4 @@ Join us on a journey of exploration and discovery as we delve into the features 
 benefits of ReadSync. Whether you're a seasoned blogger or a first-time podcaster,
 ReadSync welcomes you to join our vibrant community and make your mark on the
 digital landscape.
+![Uploading Logo.png…]()
