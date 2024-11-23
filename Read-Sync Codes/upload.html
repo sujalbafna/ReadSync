@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 60%;
+            max-width: 600px;
+        }
+        label {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        select, input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.1rem;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        h1{
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body style="background-color:dodgerblue;">
+    
+    <form action="/upload" method="post">
+        <center><h1><br><br>ReadSync<h1></center>
+        <label for="blogType">Select Blog Type:</label>
+        <select id="blogType" name="blogType">
+            <option value="technology">Personal Blogs</option>
+            <option value="lifestyle">Travel Blogs</option>
+            <option value="food">Fashion And Beauty Blogs</option>
+            <option value="travel">Food Blogs</option>
+            <option value="travel">Lifestyle Blogs</option>
+            <option value="travel">Parenting Blogs</option>
+            <option value="travel">Tech Blogs</option>
+            <option value="travel">Finance Blogs</option>
+            <option value="travel">DIY/Craft Blogs</option>
+            <option value="travel">Fitness And Wellness Blogs</option>
+            <option value="travel">Political Blogs</option>
+            <option value="travel">News And Journalism Blogs</option>
+            <option value="travel">Niche/Hobby Blogs</option>
+            <option value="travel">Business Blogs</option>
+            <option value="travel">Educational Blogs</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br>
+        <label for="blogTitle">Title:</label>
+        <input type="text" id="blogTitle" name="blogTitle" required>
+        <br>
+        <label for="blogContent">Content:</label><br>
+        <textarea id="blogContent" name="blogContent" rows="10" cols="50" required></textarea>
+        <br>
+        <a href="upload.html"><input type="submit" value="Submit"></a>
+        <center><a href="index.html"><h2>Home Page<h2></a></center>
+    </form>
+    
+</body>
+</html>
